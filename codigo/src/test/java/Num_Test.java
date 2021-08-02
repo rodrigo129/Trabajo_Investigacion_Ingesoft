@@ -5,16 +5,24 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class Num_Test {
     //
+    Num_ tester = new Num_();
     @org.junit.jupiter.api.Test
 
+
+
     public void esFactorisable() {
-        Num_ tester = new Num_();
+
 
 
 
 
         Assertions.assertEquals(false,tester.EsFactorisable(1));
-        Assertions.assertEquals(false,tester.EsFactorisable(0));
+
         Assertions.assertEquals(true,tester.EsFactorisable(2));
+    }
+
+    @org.junit.jupiter.api.Test
+    public void test_2(){
+        Assertions.assertEquals(false,tester.EsFactorisable(0));
     }
 }
